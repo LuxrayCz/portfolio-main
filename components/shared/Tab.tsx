@@ -13,8 +13,8 @@ const TAB_CONTENT = [
         <li>Tailwind</li>
         <li>JavaScript</li>
         <li>React</li>
-        <li>Next.js 13</li>
-        <li>Node.js</li>
+        <li>Next.js 13.4</li>
+        <li>Nest.js</li>
       </ul>
     ),
   },
@@ -23,7 +23,7 @@ const TAB_CONTENT = [
     id: "education",
     content: (
       <ul>
-        <li>Gymnázium Jana Blahoslava</li>
+        <li>Gymnázium Jana Blahoslava - currently studying</li>
       </ul>
     ),
   },

@@ -33,8 +33,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-8 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus recusandae repellat iure! Quos nemo minus iusto distinctio consectetur
-            at.
+            I have developed many types of applications. Both front-end and back-end. My main tools are Next.js 13.4 and Tailwind
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-200  hover:bg-slate-200 text-white font-[500]">
