@@ -7,60 +7,51 @@ import { useInView, motion } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Threads clone",
+    description: "Next.js 13.4 full stack app",
+    image: "/projects/threads.png",
+    tag: ["All", "Next.js"],
+    gitUrl: "https://github.com/LuxrayCz/thread-clone",
+    previewUrl: "https://thread-clone-beige-three.vercel.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Breadit - reddit clone",
+    description: "Next.js 13.4 full stack app",
+    image: "/projects/breadit.png",
+    tag: ["All", "Next.js"],
+    gitUrl: "https://github.com/LuxrayCz/thread-clone",
+    previewUrl: "https://reddit-clone-two-iota.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Chat app",
+    description: "Next.js 13.4 full stack app with sockets",
     image: "/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Next.js"],
+    gitUrl: "https://github.com/LuxrayCz/chat-app-",
+    previewUrl: "https://chat-app-flax-ten-74.vercel.app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Front end for bank",
+    description: "React and tailwind project",
+    image: "/projects/bankApp.png",
+    tag: ["All", "React"],
+    gitUrl: "",
+    previewUrl: "https://remarkable-marzipan-cbccc4.netlify.app/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/projects/5.png",
-    tag: ["All", "Web"],
+    title: "Front end Dashboard",
+    description: "React and tailwind project",
+    image: "/projects/Dashboard.png",
+    tag: ["All", "React"],
     gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://cool-gelato-55d770.netlify.app/dashboard",
   },
 ];
-type tags = "All" | "Web" | "Mobile";
+type tags = "All" | "Next.js" | "React";
 
 const ProjectSection = () => {
   const ref = useRef(null);
@@ -83,8 +74,8 @@ const ProjectSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-12">My Projects</h2>
       <div className="text-white flex flex-row justify-center item-center gap-2 py-6">
         <ProjectTag isSelected={tag === "All"} name="All" onClick={() => setTag("All")} />
-        <ProjectTag isSelected={tag === "Web"} name="Web" onClick={() => setTag("Web")} />
-        <ProjectTag isSelected={tag === "Mobile"} name="Mobile" onClick={() => setTag("Mobile")} />
+        <ProjectTag isSelected={tag === "Next.js"} name="Next.js" onClick={() => setTag("Next.js")} />
+        <ProjectTag isSelected={tag === "React"} name="React" onClick={() => setTag("React")} />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((p, index) => (
