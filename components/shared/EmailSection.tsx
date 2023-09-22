@@ -10,6 +10,7 @@ const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    setEmailSubmitted(false);
     const data = {
       sender: e.target.email.value,
       subject: e.target.subject.value,
@@ -18,8 +19,10 @@ const EmailSection = () => {
 
     try {
       const createdEmail = await createEmail(data);
-
-      console.log(createdEmail);
+      e.target.email.value = "";
+      e.target.subject.value = "";
+      e.target.message.value = "";
+      setEmailSubmitted(true);
     } catch (error) {
       console.log(error);
     }
@@ -83,6 +86,7 @@ const EmailSection = () => {
           <button type="submit" className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full">
             Send Message
           </button>
+          {emailSubmitted && <p className="text-green-400">Email sent!</p>}
         </form>
       </div>
     </section>
