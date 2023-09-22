@@ -48,7 +48,7 @@ const projectsData = [
     image: "/projects/Dashboard.png",
     tag: ["All", "React"],
     gitUrl: "/",
-    previewUrl: "https://cool-gelato-55d770.netlify.app/dashboard",
+    previewUrl: "https://cool-gelato-55d770.netlify.app",
   },
 ];
 type tags = "All" | "Next.js" | "React";
