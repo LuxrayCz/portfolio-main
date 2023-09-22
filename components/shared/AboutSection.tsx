@@ -15,7 +15,7 @@ const AboutSection = () => {
         <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
         <p className="text-base md:text-lg">
           I am an 18-year-old student from the Czech Republic. I develop full-stack applications daily. My main goal is to get at least 1% better
-          every day. In my amateur carrer I have come across a lot of different technologies, however these are that stuck up with me:
+          every day. In my amateur career I have come across a lot of different technologies, these are that stuck up with me:
         </p>
         <Tab />
       </div>

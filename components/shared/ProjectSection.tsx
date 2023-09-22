@@ -27,7 +27,7 @@ const projectsData = [
     id: 3,
     title: "Chat app",
     description: "Next.js 13.4 full stack app with sockets",
-    image: "/projects/3.png",
+    image: "/projects/chatapp.png",
     tag: ["All", "Next.js"],
     gitUrl: "https://github.com/LuxrayCz/chat-app-",
     previewUrl: "https://chat-app-flax-ten-74.vercel.app/",
@@ -38,7 +38,7 @@ const projectsData = [
     description: "React and tailwind project",
     image: "/projects/bankApp.png",
     tag: ["All", "React"],
-    gitUrl: "",
+    gitUrl: "/",
     previewUrl: "https://remarkable-marzipan-cbccc4.netlify.app/",
   },
   {

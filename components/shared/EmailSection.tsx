@@ -1,4 +1,5 @@
 "use client";
+import { createEmail } from "@/lib/actions/email.actions";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -10,22 +11,18 @@ const EmailSection = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const data = {
-      email: e.target.email.value,
+      sender: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-    console.log(JSONdata);
-    const res = await fetch(endpoint, options);
-    console.log(res);
+
+    try {
+      const createdEmail = await createEmail(data);
+
+      console.log(createdEmail);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
