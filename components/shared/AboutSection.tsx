@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 md:mt-0 mt-16 xl:px-16 mb-20 md:mb-32"
+      className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white items-center py-8 px-4 xl:gap-16 sm:py-16 md:mt-0 mt-16 xl:px-16 mb-20 md:mb-32"
     >
       <div className="">
         <Image src="/about-image.png" alt="About image - computer" width={500} height={500} />
